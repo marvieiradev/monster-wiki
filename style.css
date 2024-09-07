@@ -1,0 +1,174 @@
+* {
+    font-family: "Markazi Text", serif;
+}
+
+html {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9EDD3;
+    background-image: url(imagens/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Honk", system-ui;
+    font-size: 60px;
+    color: #800000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    max-width: 950px;
+}
+
+.search button {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #800000;
+    font-size: 20px;
+}
+
+
+#card {
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    height: 570px;
+    margin-bottom: 10px;
+}
+
+.monster-card {
+    display: flex;
+    flex-direction: column;
+    background: url(imagens/decoracao.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #B4ADA7;
+    border: 3px solid #800000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 300px;
+    height: 450px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.card-image img {
+    width: 200px;
+    height: 200px;
+    background: url(imagens/luz.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-info {
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    margin-top: -50px;
+}
+
+.card-info h2 {
+    font-family: "Aclonica", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.card-info p {
+    font-size: 22px;
+    text-align: justify;
+    line-height: 25px;
+    color: #300000;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    background: #00000077;
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+h3 {
+    color: #300000;
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .search button {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .search input {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    #card {
+        overflow-y: auto;
+        height: 475px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
